@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple PHP Hasher</title>
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <div class="col-md-6 mx-auto">
+    <div class="card p-4">
+      <h4 class="text-center mb-4">Hash Generator</h4>
+
+      
+      <form method="POST" action="clonephp.php">
+        <input type="text" name="text" class="form-control mb-3" placeholder="Enter text here" required>
+
+        <select name="method" class="form-select mb-3" required>
+          <option value="md5">MD5</option>
+          <option value="sha1">SHA-1</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary w-100">Generate Hash</button>
+      </form>
